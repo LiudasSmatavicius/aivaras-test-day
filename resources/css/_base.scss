@@ -1,0 +1,45 @@
+// Default resets
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+// Shared
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: $bg-color url("../images/bg.png") no-repeat repeat;
+    background-size: cover;
+    font-size: 14px;
+    color: $text-color-dark;
+    font-family: "Raleway", sans-serif;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 77px;
+    margin-bottom: 17px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 47px;
+}
+
+h2 {
+    span {
+        border-bottom: 1px solid $highlight-yellow-color;
+    }
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}

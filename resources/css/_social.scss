@@ -1,0 +1,147 @@
+// Social
+.social {
+    &__col {
+        display: flex;
+        justify-content: center;
+
+        &--gap {
+            margin-top: 130px;
+        }
+    }
+
+    &__row {
+        &--gap {
+            margin-right: 120px;
+        }
+    }
+
+    &__salads {
+        max-width: 289px;
+        height: auto;
+    }
+
+    &__heading {
+        font-size: 48px;
+        line-height: 58px;
+        margin-bottom: 20px;
+    }
+
+    &__heading-first {
+        border-bottom: 1px solid $highlight-yellow-color;
+    }
+
+    &__info {
+        max-width: 469px;
+    }
+
+    &__link {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 21px;
+        color: $highlight-yellow-color;
+        font-weight: bold;
+        margin-top: 50px;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $highlight-orange-color;
+        }
+    }
+
+    &__testimonials {
+        display: flex;
+        margin-top: 100px;
+    }
+
+    &__testimonial {
+        width: 50%;
+        display: flex;
+    }
+
+    &__testimonial-avatar {
+        width: 186px;
+        height: 189px;
+    }
+
+    &__testimonial-full {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    &__testimonial-name {
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: -0.85px;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    &__testimonial-place {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+        color: #828282;
+        max-width: 160px;
+    }
+
+    &__testimonial-stars {
+        display: flex;
+        padding: 14px 0;
+    }
+
+    &__testimonial-star {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+    }
+
+    &__testimonial-review {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        font-weight: 300;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    .social {
+        &__col {
+            flex-direction: column;
+        }
+
+        &__row {
+            &--gap {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+
+        &__salads {
+            max-width: 100%;
+        }
+
+        &__testimonials {
+            flex-direction: column;
+        }
+
+        &__testimonial {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__testimonial-full {
+            text-align: center;
+        }
+
+        &__testimonial-place {
+            max-width: unset;
+        }
+
+        &__testimonial-stars {
+            justify-content: center;
+        }
+    }
+}
